@@ -1,0 +1,246 @@
+body {
+    height: 100%;
+    background-color: #634c4c;
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+    text-decoration: solid;
+    background-color: #eaeaea;
+    margin: auto;
+    width: 50%;
+    font-size: 40px;
+    border-color: #AD974f;
+    border-width: 10px;
+    border-style: ridge;
+}
+
+.heading {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-image: url(banner1.jpg);
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.page-links {
+    width: auto;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-between;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+}
+
+.page-links a:hover {
+    background-color: grey;
+    font-size: 40px;
+}
+
+.page-links a {
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    border-style: ridge;
+    border-color: #AD974f;
+    background-color: #eaeaea;
+    border-width: 10px;
+    font-size: 25px;
+    border-spacing: 10px;
+}
+
+.about {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 50px;
+    height: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #AD974f;
+    font-style: oblique;
+    text-align: center;
+    border-right-style: ridge;
+    border-right-width: 10px;
+    border-right-color: #AD974f;
+}
+
+.info {
+
+    display: block;
+    width: 70%;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 20;
+    float: right;
+    color: #AD974f;
+    height: 250px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.info p {
+    text-align: justify;
+    margin-right: 10px;
+}
+
+.image {
+    float: right;
+    object-fit: fill;
+    height: 250px;
+    width: 250px;
+    margin-left: 30px;
+}
+
+.projects {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 50px;
+    height: 350px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #AD974f;
+    font-style: oblique;
+    text-align: center;
+    border-right-style: ridge;
+    border-right-width: 10px;
+    border-right-color: #AD974f;
+    margin-top: 40px;
+
+    /*.about {
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 50px;
+    height: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #AD974f;
+    font-style: oblique;
+    text-align: center;
+    border-right-style: ridge;
+    border-right-width: 10px;
+    border-right-color: #AD974f;*/
+}
+
+.work-links{
+    display: block;
+    width: 70%;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 20;
+    float: right;
+    height: 350px;
+}
+
+.horiseon {
+   background-image: url(marketing2.jpg);
+   width: 100%;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: rgb(24, 24, 24);
+   text-decoration: none;
+   border-style: ridge;
+   border-color: #AD974f;
+   border-width: 10px;
+   font-size: 25px;
+   border-spacing: 10px;
+   margin: auto;
+   position: relative;
+}
+
+.p-class {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.contact 
+{
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 50px;
+    height: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #AD974f;
+    font-style: oblique;
+    text-align: center;
+    border-right-style: ridge;
+    border-right-width: 10px;
+    border-right-color: #AD974f;
+    margin-top: 40px;
+}
+
+.contact-links {
+  color: #AD974f;
+    margin-top: 70px;
+ width: 70%;
+    padding-top: 20px;
+    margin-right: 50px;
+    display: flex;
+    list-style-type: none;
+    float: right;
+    text-align: right;
+    text-align: center;
+    justify-content: space-between;
+    bottom: 30px;
+    font-size: 30px;
+    }
+
+.contact-links a{
+    text-decoration: none;
+    color: #AD974f;
+    }
+    
+@media only screen and (max-width: 1190px){
+
+.heading {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    height: auto;
+    }
+
+.about, .projects, .contact {
+    flex-wrap: nowrap;
+    height: auto;
+width: 100%;
+justify-content: space-between;
+}
+
+.info
+{
+    height: auto;
+    width: auto;
+}
+.contact-links {
+    flex-wrap: wrap;
+    text-align: right;
+ 
+   width: auto;
+}
+
+
+
+    }
