@@ -1,11 +1,14 @@
+/*Added a background color to the page along with spacing the entire page in to be more readable and neat*/
 body {
-    height: 100%;
-    background-color: #634c4c;
+  
+    background: url(./images/background.jpeg) no-repeat center center fixed;
     width: auto;
-    padding-left: 25px;
+    background-size: cover;
+  padding-left: 25px;
     padding-right: 25px;
 }
 
+/* added a border to title, heading and .page-links provide emphasis to the title and seperate it from the remaining element of the page*/
 .title {
     text-align: center;
     font-weight: bold;
@@ -19,13 +22,13 @@ body {
     border-width: 10px;
     border-style: ridge;
 }
-
+/*added a banner to give an effect of professionalism*/
 .heading {
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 50px;
     margin-right: 50px;
-    background-image: url(banner1.jpg);
+    background-image: url(images/banner1.jpg);
     height: auto;
     width: auto;
     background-size: cover;
@@ -33,6 +36,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
 
 .page-links {
     width: auto;
@@ -48,11 +52,6 @@ body {
     text-decoration: none;
 }
 
-.page-links a:hover {
-    background-color: grey;
-    font-size: 40px;
-}
-
 .page-links a {
     color: rgb(24, 24, 24);
     text-decoration: none;
@@ -63,7 +62,12 @@ body {
     font-size: 25px;
     border-spacing: 10px;
 }
-
+/*wanted to add hovering emphasis to each link to stand out*/
+.page-links a:hover {
+    background-color: grey;
+    font-size: 40px;
+}
+/*customized and positioned section to follow similarly for projects and contact me with a few small changes.*/
 .about {
     display: block;
     float: left;
@@ -80,6 +84,7 @@ body {
     border-right-color: #AD974f;
 }
 
+/* customized and positioned text block to the right to keep smooth flow of the page*/
 .info {
 
     display: block;
@@ -107,6 +112,7 @@ body {
     margin-left: 30px;
 }
 
+/*customized and positioned section to follow similarly for projects and contact me with a few small changes.*/
 .projects {
     display: block;
     float: left;
@@ -123,23 +129,9 @@ body {
     border-right-color: #AD974f;
     margin-top: 40px;
 
-    /*.about {
-    display: block;
-    float: left;
-    width: 20%;
-    margin-left: 50px;
-    height: 250px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    color: #AD974f;
-    font-style: oblique;
-    text-align: center;
-    border-right-style: ridge;
-    border-right-width: 10px;
-    border-right-color: #AD974f;*/
 }
 
-.work-links{
+.work-links {
     display: block;
     width: 70%;
     margin-right: 50px;
@@ -149,33 +141,37 @@ body {
     height: 350px;
 }
 
+/*emphasized the size of the picture of forst project to be laarger and available*/
 .horiseon {
-   background-image: url(marketing2.jpg);
-   width: 100%;
-   height: 100%;
-   background-repeat: no-repeat;
-   background-size: cover;
-   color: rgb(24, 24, 24);
-   text-decoration: none;
-   border-style: ridge;
-   border-color: #AD974f;
-   border-width: 10px;
-   font-size: 25px;
-   border-spacing: 10px;
-   margin: auto;
-   position: relative;
+    background-image: url(images/pexels.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    border-style: ridge;
+    border-color: #AD974f;
+    border-width: 10px;
+    font-size: 40px;
+     
+    border-spacing: 10px;
+    margin: auto;
+    position: relative;
 }
 
+/*seperated the horiseon marketing to position it inside */
 .p-class {
 
     position: absolute;
     bottom: 0;
     left: 0;
+    background-color: rgb(107, 103, 83);
 
 }
 
-.contact 
-{
+/*customized and positioned section to follow similarly for projects and contact me with a few small changes.*/
+.contact {
     display: block;
     float: left;
     width: 20%;
@@ -193,9 +189,9 @@ body {
 }
 
 .contact-links {
-  color: #AD974f;
+    color: #AD974f;
     margin-top: 70px;
- width: 70%;
+    width: 70%;
     padding-top: 20px;
     margin-right: 50px;
     display: flex;
@@ -206,41 +202,50 @@ body {
     justify-content: space-between;
     bottom: 30px;
     font-size: 30px;
-    }
-
-.contact-links a{
+}
+/*changed the background and text to none for the link*/
+.contact-links a {
     text-decoration: none;
     color: #AD974f;
-    }
-    
-@media only screen and (max-width: 1190px){
+}
+/*added a hover element to the clickable links to add emphasis*/
+.contact-links a:hover {
 
-.heading {
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    height: auto;
-    }
-
-.about, .projects, .contact {
-    flex-wrap: nowrap;
-    height: auto;
-width: 100%;
-justify-content: space-between;
+    background-color: beige;
 }
 
-.info
-{
-    height: auto;
-    width: auto;
-}
-.contact-links {
-    flex-wrap: wrap;
-    text-align: right;
- 
-   width: auto;
-}
+/*added media tag to position parts of the screen evenly in a smaller screen. Key parts are the about me section drops below the about me / 
+links and title shrink / and the bottom links group together on the right*/
+@media only screen and (max-width: 1190px) {
 
+    .heading {
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-
+        height: auto;
     }
+
+    .about,
+    .projects,
+    .contact {
+        flex-wrap: nowrap;
+        height: auto;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .info {
+        height: auto;
+        width: auto;
+    }
+
+    .contact-links {
+        flex-wrap: wrap;
+        text-align: right;
+
+        width: auto;
+    }
+
+
+
+}
